@@ -2,11 +2,15 @@
   "company": {
     "name": "TNG Drive",
     "tagline": "كراء سيارات في طنجة",
-    "phone": "212600000000",
-    "whatsapp": "212600000000",
-    "email": "contact@tngdrive.ma",
+    "phone": "212709497098",
+    "whatsapp": "212709497098",
+    "email": "pimo1999loko@gmail.com",
     "address": "شارع محمد السادس، طنجة، المغرب",
-    "workingHours": "08:00 - 22:00"
+    "workingHours": "08:00 - 22:00",
+    "instagram": "https://www.instagram.com/tng_drive",
+    "social": {
+      "instagram": "https://www.instagram.com/tng_drive"
+    }
   },
   "cars": [
     {
