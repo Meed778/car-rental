@@ -85,7 +85,22 @@ const CarRentalApp = {
   async loadData() {
     let cars = [];
 
-    if (SHEET_URL && typeof PapaParse !== 'undefined') {
+    // 1. الأولوية القصوى: بيانات الأدمن من localStorage
+    const adminData = localStorage.getItem('tngdrive_admin_data');
+    if (adminData) {
+      try {
+        const parsed = JSON.parse(adminData);
+        if (parsed.length > 0) {
+          cars = parsed;
+          console.log(`✅ تم تحميل ${cars.length} سيارة من لوحة التحكم`);
+        }
+      } catch (e) {
+        console.warn('⚠️ فشل تحميل بيانات الأدمن');
+      }
+    }
+
+    // 2. Google Sheets (إذا تم تفعيله)
+    if (cars.length === 0 && SHEET_URL && typeof PapaParse !== 'undefined') {
       try {
         const res = await fetch(SHEET_URL);
         const csv = await res.text();
@@ -96,7 +111,6 @@ const CarRentalApp = {
         cars = parsed.data
           .filter(row => {
             if (row.active !== "TRUE" || !row.name) return false;
-            // إدارة المخزون: إخفاء السيارة إذا كانت محجوزة حتى تاريخ مستقبلي
             if (row.booked_until && row.booked_until >= today) return false;
             return true;
           })
@@ -125,7 +139,7 @@ const CarRentalApp = {
       }
     }
 
-    // fallback إلى الملف المحلي
+    // 3. fallback إلى الملف المحلي data.json
     if (cars.length === 0) {
       const res = await fetch('js/data.json');
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -283,6 +297,7 @@ const CarRentalApp = {
             <a href="#how-it-works" class="nav-link">كيف نعمل</a>
             <a href="#testimonials" class="nav-link">آراء العملاء</a>
             <a href="#contact" class="nav-link">اتصل بنا</a>
+            <a href="#admin" class="nav-link admin-link">🔐 الأدمن</a>
           </div>
           <button class="nav-toggle" id="navToggle" aria-label="القائمة">
             <span></span><span></span><span></span>
