@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- =============================================
+       SEO — Meta Tags أساسية
+       [مستقبلاً]: أضف هنا وصفاً دقيقاً و Keywords
+       مثال:
+       <meta name="description" content="وكالة كراء سيارات فاخرة في المغرب...">
+       <meta name="keywords" content="كراء سيارات, سيارة فاخرة, مرسيدس, بي إم دبليو, المغرب">
+       ============================================= -->
+  <meta name="description" content="احجز سيارتك الآن مع TNG Drive في طنجة. نوفر سيارات حديثة، تأمين شامل، وتوصيل للمطار مجاناً. كراء سيارات رخيص وآمن.">
+  <meta name="keywords" content="كراء سيارات طنجة, سيارة للإيجار طنجة, TNG Drive, كراء سيارات رخيص, تأجير سيارات المغرب">
+  <meta name="author" content="TNG Drive">
+  <meta name="theme-color" content="#0a0a0f">
+
+  <!-- السيو المحلي -->
+  <meta name="geo.region" content="MA-01" />
+  <meta name="geo.placename" content="Tangier" />
+
+  <!-- Open Graph (لمشاركة الروابط على وسائل التواصل) -->
+  <meta property="og:title" content="TNG Drive | أفضل وكالة كراء سيارات في طنجة">
+  <meta property="og:description" content="احجز سيارتك الآن مع TNG Drive في طنجة. نوفر سيارات حديثة، تأمين شامل، وتوصيل للمطار مجاناً.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tngdrive.ma">
+  <meta property="og:image" content="https://tngdrive.ma/og-image.jpg">
+
+  <!-- =============================================
+       Tailwind CSS (CDN) — مجاني وسريع
+       [مستقبلاً]: بدّل بالمعالج المحلي (PostCSS)
+       لتحسين الأداء عند الإطلاق الفعلي
+       ============================================= -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- =============================================
+       Google Fonts — Tajawal للغة العربية
+       [مستقبلاً]: حمّل الخط محلياً للسرعة
+       ============================================= -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- =============================================
+       [مستقبلاً] Google Analytics
+       أضف الكود التالي قبل إغلاق </head>:
+       
+       <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+       <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         gtag('config', 'G-XXXXXXXXXX');
+       </script>
+       ============================================= -->
+
+  <!-- أيقونة الموقع (Favicon) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23c8a45c'%3E%3Cpath d='M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2'/%3E%3Ccircle cx='6.5' cy='16.5' r='2.5'/%3E%3Ccircle cx='16.5' cy='16.5' r='2.5'/%3E%3C/svg%3E">
+
+  <!-- التحميل المسبق للملفات -->
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="preload" href="js/data.json" as="fetch" crossorigin="anonymous">
+
+  <!-- ورقة الأنماط الأساسية -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRental",
+    "name": "TNG Drive",
+    "image": "https://your-github-link.github.io/car-rental/logo.png",
+    "@id": "",
+    "url": "https://your-github-link.github.io/car-rental",
+    "telephone": "+2126XXXXXXXX",
+    "priceRange": "200MAD - 800MAD",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Street Name, City Center",
+      "addressLocality": "Tangier",
+      "addressCountry": "MA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 35.7595,
+      "longitude": -5.8340
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+      ],
+      "opens": "08:00",
+      "closes": "22:00"
+    }
+  }
+  </script>
+
+  <!-- Sitemap -->
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+  <!-- BreadcrumbList Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "الرئيسية",
+      "item": "https://tngdrive.ma"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "السيارات",
+      "item": "https://tngdrive.ma/#cars"
+    }]
+  }
+  </script>
+
+  <!-- FAQ Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "ما هي أسعار كراء السيارات في طنجة؟",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "أسعارنا تبدأ من 200 درهم في اليوم للسيارات الاقتصادية وتصل إلى 1600 درهم للسيارات الفاخرة."
+      }
+    },{
+      "@type": "Question",
+      "name": "هل توفرون توصيل من مطار طنجة؟",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "نعم، نوفر خدمة توصيل السيارة إلى مطار طنجة ابن بطوطة مجاناً."
+      }
+    },{
+      "@type": "Question",
+      "name": "ما هي شروط كراء السيارة في TNG Drive؟",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "نطلب رخصة قيادة سارية وبطاقة تعريف. العمر الأدنى 21 سنة. التأمين شامل مشمول في السعر."
+      }
+    }]
+  }
+  </script>
+
+  <!-- Technical SEO -->
+  <link rel="canonical" href="https://tngdrive.ma" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="revisit-after" content="7 days" />
+  <meta name="language" content="Arabic" />
+  <meta http-equiv="content-language" content="ar" />
+
+  <title>TNG Drive | أفضل وكالة كراء سيارات في طنجة - أسعار تبدأ من 200 درهم</title>
+</head>
+<body>
+
+  <!-- ========== التطبيق ========== -->
+  <div id="app"></div>
+
+  <!-- ========== JavaScript ========== -->
+
+  <!--
+    [مستقبلاً: تحسين الأداء]
+    - استخدم `defer` بدلاً من `type="module"` للتوافق العكسي
+    - ضغط الملفات باستخدام Terser قبل الإطلاق
+    - استخدم vite أو webpack إذا أردت تجميع الملفات
+  -->
+
+  <!-- PapaParse — تحويل CSV من Google Sheets إلى JSON -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+
+  <!-- نظام المكونات (Components Layer) -->
+  <script src="js/components.js"></script>
+
+  <!-- نظام الحجز وإرسال واتساب (Booking Layer) -->
+  <script src="js/booking.js"></script>
+
+  <!-- التطبيق الرئيسي (Application Layer) -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>

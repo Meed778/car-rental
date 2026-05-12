@@ -1,0 +1,149 @@
+{
+  "company": {
+    "name": "TNG Drive",
+    "tagline": "كراء سيارات في طنجة",
+    "phone": "212600000000",
+    "whatsapp": "212600000000",
+    "email": "contact@tngdrive.ma",
+    "address": "شارع محمد السادس، طنجة، المغرب",
+    "workingHours": "08:00 - 22:00"
+  },
+  "cars": [
+    {
+      "id": "car-1",
+      "brand": "Mercedes-Benz",
+      "model": "C300 AMG",
+      "year": 2024,
+      "category": "luxury",
+      "transmission": "Automatic",
+      "fuel": "Gasoline",
+      "seats": 5,
+      "doors": 4,
+      "pricePerDay": 850,
+      "currency": "MAD",
+      "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4b9?w=600&q=80",
+      "features": ["Apple CarPlay", "Panoramic Roof", "Leather Seats", "360° Camera", "Keyless Entry"],
+      "available": true,
+      "promo": true
+    },
+    {
+      "id": "car-2",
+      "brand": "BMW",
+      "model": "X5 M50i",
+      "year": 2024,
+      "category": "suv",
+      "transmission": "Automatic",
+      "fuel": "Gasoline",
+      "seats": 7,
+      "doors": 5,
+      "pricePerDay": 1100,
+      "currency": "MAD",
+      "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&q=80",
+      "features": ["HUD", "Harman Kardon", "Adaptive Cruise", "Heated Seats", "4WD"],
+      "available": true,
+      "promo": true
+    },
+    {
+      "id": "car-3",
+      "brand": "Audi",
+      "model": "RS7 Sportback",
+      "year": 2024,
+      "category": "sport",
+      "transmission": "Automatic",
+      "fuel": "Gasoline",
+      "seats": 4,
+      "doors": 5,
+      "pricePerDay": 1400,
+      "currency": "MAD",
+      "image": "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=600&q=80",
+      "features": ["Quattro AWD", "Virtual Cockpit", "Bang & Olufsen", "Sport Exhaust", "Carbon Fiber"],
+      "available": true,
+      "promo": false
+    },
+    {
+      "id": "car-4",
+      "brand": "Range Rover",
+      "model": "Velar",
+      "year": 2023,
+      "category": "suv",
+      "transmission": "Automatic",
+      "fuel": "Diesel",
+      "seats": 5,
+      "doors": 5,
+      "pricePerDay": 950,
+      "currency": "MAD",
+      "image": "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=600&q=80",
+      "features": ["Air Suspension", "Meridian Sound", "Terrain Response", "Dual Screens", "Panoramic Roof"],
+      "available": true,
+      "promo": false
+    },
+    {
+      "id": "car-5",
+      "brand": "Porsche",
+      "model": "Cayenne S",
+      "year": 2024,
+      "category": "suv",
+      "transmission": "Automatic",
+      "fuel": "Gasoline",
+      "seats": 5,
+      "doors": 5,
+      "pricePerDay": 1600,
+      "currency": "MAD",
+      "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=80",
+      "features": ["Sport Chrono", "Bose Surround", "Adaptive Roof", "Park Assist", "LED Matrix"],
+      "available": true,
+      "promo": true
+    },
+    {
+      "id": "car-6",
+      "brand": "Toyota",
+      "model": "RAV4 Hybrid",
+      "year": 2024,
+      "category": "economy",
+      "transmission": "Automatic",
+      "fuel": "Hybrid",
+      "seats": 5,
+      "doors": 5,
+      "pricePerDay": 450,
+      "currency": "MAD",
+      "image": "https://images.unsplash.com/photo-1629901925121-0a2f5fae4e5f?w=600&q=80",
+      "features": ["Hybrid Engine", "Reverse Camera", "Blind Spot", "Lane Assist", "Wireless Charging"],
+      "available": true,
+      "promo": false
+    },
+    {
+      "id": "car-7",
+      "brand": "Dacia",
+      "model": "Sandero Stepway",
+      "year": 2024,
+      "category": "economy",
+      "transmission": "Manual",
+      "fuel": "Gasoline",
+      "seats": 5,
+      "doors": 5,
+      "pricePerDay": 250,
+      "currency": "MAD",
+      "image": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&q=80",
+      "features": ["Bluetooth", "Air Conditioning", "USB Port", "Cruise Control", "Parking Sensors"],
+      "available": true,
+      "promo": false
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Omar B.",
+      "text": "خدمة ممتازة وسيارات نظيفة جداً. أنصح الجميع بالتعامل معهم.",
+      "rating": 5
+    },
+    {
+      "name": "Salma L.",
+      "text": "حجزت سيارة مرسيدس وكانت التجربة رائعة. السرعة والاحترافية في التعامل.",
+      "rating": 5
+    },
+    {
+      "name": "Youssef M.",
+      "text": "أسعار مناسبة وجودة عالية. سأكرر التجربة بالتأكيد.",
+      "rating": 4
+    }
+  ]
+}
